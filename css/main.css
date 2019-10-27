@@ -1,0 +1,286 @@
+body {
+  background-color: rgb(20, 18, 49);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* HEADER _______________________________________________________________________________________________*/
+
+#home {
+  background-image: url("../images/cosmos.jpg");
+  height: 100vh;
+}
+header h1 {
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align: center;
+  position: relative;
+  top: 35vh;
+  padding: 15px;
+}
+header h3 {
+  color: #999;
+  font-family: cursive;
+  text-align: center;
+  position: relative;
+  top: 35vh;
+  padding-bottom: 15px;
+}
+#home-buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 35vh;
+  margin: 50px;
+  text-align: center;
+}
+#home-buttons a {
+  padding: 20px 40px;
+  margin: 10px;
+  background-color: rgb(53, 87, 211);
+  border-radius: 10px;
+  transition: transform .5s, box-shadow .5s;
+}
+#home-buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: black 5px 5px 5px;
+}
+/* NAVBAR _____________________________________________________________________________________________*/
+
+nav {
+  background: linear-gradient(180deg, darkgreen, rgb(20, 18, 49));
+}
+nav ul {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block; 
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 25px 20px 25px;
+  color: #999;
+  font-family: sans-serif;
+  font-size: 150%;
+  transition: color .5s;
+}
+nav ul li a:hover {
+  opacity: 0.7;
+  background-color: rgb(20, 18, 49);
+  color: orangered;
+}
+nav ul li a:active {
+  background-color: rgb(20, 18, 49);
+  color: rgb(39, 170, 6);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.sticky + #my-skills {
+  padding-top: 60px;
+}
+/* SKILLS ________________________________________________________________________________________________*/
+
+#my-skills {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-gap: 2em;
+  width: 80vw;
+  margin: 100px auto;
+  overflow: auto;
+}
+#about-me {
+  border: 1px solid black;
+}
+#photo {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+}
+#photo img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+#intro {
+  padding: 10px;
+  color: #999;
+  font-family: cursive;
+  text-align: center;
+}
+#skills {
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  grid-gap: 1em;
+}
+.skill {
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: #555;
+  padding: 10px;
+}
+.skill-title {
+  color: rgb(34, 2, 71);
+  font-family: cursive;
+  text-align: center;
+}
+.skill-level {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(20, 1fr);
+  padding: 0;
+}
+.completed {
+  background: linear-gradient(90deg, rgb(39, 170, 6), rgb(6, 68, 3));
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#html {
+  grid-column: 1 / span 15;
+}
+#css {
+  grid-column: 1 / span 16;
+}
+#javascript {
+  grid-column: 1 / span 11;
+}
+#less {
+  grid-column: 1 / span 6;
+}
+#react {
+  grid-column: 1 / span 3;
+}
+#bootstrap{
+  grid-column: 1 / span 8;
+}
+#jquery {
+  grid-column: 1 / span 6;
+}
+#git {
+  grid-column: 1 / span 12;
+}
+.skill-percent {
+  color: rgb(34, 2, 71);
+  font-family: cursive;
+}
+/* PROJECTS _____________________________________________________________________________________*/
+
+#projects {
+  width: 60vw;
+  margin: 100px auto;
+}
+.project-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  background-color: rgb(59, 22, 119);
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  height: 200px;
+  color: #ccc;
+  font-family: sans-serif;
+}
+.project-screenshot {
+  max-width: 100%;
+  overflow: hidden;
+}
+.project-screenshot img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  transition: transform .5s ease;
+}
+.project-screenshot img:hover {
+  transform: scale(1.5);
+}
+.project-description {
+  grid-column: 2 / span 2;
+  padding-top: 80px;
+}
+.technologies img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: 10px;
+}
+/*CONTACT
+________________________________________________________________________*/
+#contact {
+  margin: 200px 0 0 0;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  background: url(../images/contact.jpg);
+  background-size: cover;
+}
+#contact h1 {
+  padding: 100px;
+  font-size: 32px;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.form-el {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orange;
+  color: #fff;
+  font-size: 16px;
+}
+input {
+  height: 40px;
+}
+.submit {
+  background-color: #f52;
+  margin-top: 20px;
+  border-color: transparent;
+  height: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: .4s ease;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: rgb(4, 95, 4);
+}
+.social {
+  margin-top: 20px;
+}
+.social img {
+  max-width: 50px;
+  max-height: 50px;
+  transition: transform .5s ease;
+}
+.social img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+

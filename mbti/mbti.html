@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MBTI Personality Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Jua|Kameron|Nanum+Gothic+Coding|Oleo+Script|Tangerine"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Myers-Briggs Personality Test</h1>
+        <p class="intro">Take this short 20 questions Myers-Briggs based personality test and find out which of the 16
+            personality types fits you. Choose the answer that best describes you. Try to be as <em>honest</em> as
+            possible even if you don't like the answer.</p>
+    </header>
+    <div id="questions-container">
+        <div class="questions i-e show" id="q01">
+            <h3>You enjoy having a wide circle of aquantainces.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions n-s hide" id="q06">
+            <h3>You often drift away into daydreaming about various ideas or scenarios.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions t-f hide" id="q11">
+            <h3>You prefer to act immediately rather than speculate about various options</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions p-j hide" id="q16">
+            <h3>You are almost never late for your appointments</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions i-e hide" id="q02">
+            <h3>You spend your leisure time actively socializing with a group of people, attending parties, shopping,
+                etc.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions n-s hide" id="q07">
+            <h3>I like to know the "why" of things.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions t-f hide" id="q12">
+            <h3>Your actions are frequently influenced by your emotions</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions p-j hide" id="q17">
+            <h3>You know how to put every minute of your time to good purpose</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions i-e hide" id="q03">
+            <h3>It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions n-s hide" id="q08">
+            <h3>You like to involve in philosophical discussions.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions t-f hide" id="q13">
+            <h3>When it comes to making life-changing choices, you mostly listen to your heart rather than your head.
+            </h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions p-j hide" id="q18">
+            <h3>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on
+                track as soon as possible.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions i-e hide" id="q04">
+            <h3>You feel more drawn to places with a bustling and busy atmosphere than to more quiet and intimate ones.
+            </h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions n-s hide" id="q09">
+            <h3>You like discussing different views and theories on what the world could look like in the future.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions t-f hide" id="q14">
+            <h3>Your emotions control you more than you control them.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions p-j hide" id="q19">
+            <h3>You have a careful and methodical approach to life.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions i-e hide" id="q05">
+            <h3>I feel I'm more energetic when i'm socializing with a group of people.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions n-s hide" id="q10">
+            <h3>For you, it is easier to gain knowledge from books or manuals than through hands-on experiences.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions t-f hide" id="q15">
+            <h3>I think logic is sometimes overrated.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class="questions p-j hide" id="q20">
+            <h3>When looking for a movie to watch, you can spend ages browsing the catalog.</h3>
+            <div class="answer-containers">
+                <p class="answers" data-framework="strongly-a">Strongly Agree</p>
+                <p class="answers" data-framework="agree">Agree</p>
+                <p class="answers" data-framework="slightly-a">Slightly agree</p>
+                <p class="answers" data-framework="uncertain">Uncertain</p>
+                <p class="answers" data-framework="slightly-d">Slightly disagree</p>
+                <p class="answers" data-framework="disagree">Disagree</p>
+                <p class="answers" data-framework="strongly-d">Strongly disagree</p>
+            </div>
+        </div>
+        <div class=" warning hide">Please select an answer first!</div>
+        <div class="buttons" id="next-btn-container">
+            <button id="next">next</button>
+        </div>
+        <div class="buttons hide" id="finish-btn-container">
+            <button id="finish">finish</button>
+        </div>
+    </div>
+    <div id="result" class="hide"></div>
+    <div id="result-desc" class="hide">
+        <div class="INTP hide">
+            <h4>The Architect</h4>
+            <p class="desc">INTPs are philosophical innovators, fascinated by logical analysis, systems, and design.
+                They are preoccupied with theory, and search for the universal law behind everything they see. They want
+                to understand the unifying themes of life, in all their complexity.</p>
+            <hr>
+            <p class="desc">INTPs are detached, analytical observers who can seem oblivious to the world around them
+                because they are so deeply absorbed in thought. They spend much of their time focused internally:
+                exploring concepts, making connections, and seeking understanding. To the Architect, life is an ongoing
+                inquiry into the mysteries of the universe.</p>
+            <hr>
+            <p class="desc">Famous INTPs include Albert Einstein, Thomas Jefferson, Rene Descartes, Charles Darwin,
+                Marie Curie, Socrates, and Abraham Lincoln.</p>
+            <hr>
+            <p class="desc">Popular leisure activities for an INTP include reading, art and cultural events, chess and
+                other strategy games, writing, taking classes, working with computers, backpacking, hiking, and
+                meditation.</p>
+        </div>
+        <div class="INTJ hide">
+            <h4>The Mastermind</h4>
+            <p class="desc">INTJs are analytical problem-solvers, eager to improve systems and processes with their
+                innovative ideas. They have a talent for seeing possibilities for improvement, whether at work, at home,
+                or in themselves.</p>
+            <hr>
+            <p class="desc">Often intellectual, INTJs enjoy logical reasoning and complex problem-solving. They approach
+                life by analyzing the theory behind what they see, and are typically focused inward, on their own
+                thoughtful study of the world around them. INTJs are drawn to logical systems and are much less
+                comfortable with the unpredictable nature of other people and their emotions. They are typically
+                independent and selective about their relationships, preferring to associate with people who they find
+                intellectually stimulating.</p>
+            <hr>
+            <p class="desc">Famous INTJs include Hillary Clinton, Al Gore, Bill Gates, Dwight Eisenhower, Alan
+                Greenspan, Ulysses S. Grant, Stephen Hawking, John Maynard Keynes, Ayn Rand, Isaac Asimov, Lewis
+                Carroll, Cormac McCarthy, and Sir Isaac Newton.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the INTJ include reading, cultural events, taking classes, appreciating
+                art, computers and video games, and independent sports such as swimming, backpacking, or running
+                marathons.</p>
+        </div>
+        <div class="INFP hide">
+            <h4>The Healer</h4>
+            <p class="desc">INFPs are imaginative idealists, guided by their own core values and beliefs. To a Healer,
+                possibilities are paramount; the reality of the moment is only of passing concern. They see potential
+                for a better future, and pursue truth and meaning with their own flair.</p>
+            <hr>
+            <p class="desc">INFPs are sensitive, caring, and compassionate, and are deeply concerned with the personal
+                growth of themselves and others. Individualistic and nonjudgmental, INFPs believe that each person must
+                find their own path. They enjoy spending time exploring their own ideas and values, and are gently
+                encouraging to others to do the same. INFPs are creative and often artistic; they enjoy finding new
+                outlets for self-expression.</p>
+            <hr>
+            <p class="desc">Famous INFPs include Princess Diana, Audrey Hepburn, Fred Rogers, John Lennon, Kurt Cobain,
+                Tori Amos, Morrissey, Chloe Sevigny, William Shakespeare, Bill Watterson, A.A. Milne, Helen Keller, Carl
+                Rogers, and Isabel Briggs Myers (creator of the Myers-Briggs Type Indicator).</p>
+            <hr>
+            <p class="desc">Popular hobbies for INFPs include poetry, creative writing, music, photography, theater, and
+                visual art.</p>
+        </div>
+        <div class="INFJ hide">
+            <h4>The Counselor</h4>
+            <p class="desc">INFJs are creative nurturers with a strong sense of personal integrity and a drive to help
+                others realize their potential. Creative and dedicated, they have a talent for helping others with
+                original solutions to their personal challenges.</p>
+            <hr>
+            <p class="desc">The Counselor has a unique ability to intuit others' emotions and motivations, and will
+                often know how someone else is feeling before that person knows it himself. They trust their insights
+                about others and have strong faith in their ability to read people. Although they are sensitive, they
+                are also reserved; the INFJ is a private sort, and is selective about sharing intimate thoughts and
+                feelings.</p>
+            <hr>
+            <p class="desc">Famous INFJs include Mohandas Gandhi, Eleanor Roosevelt, Emily Bronte, Carl Jung, Fyodor
+                Dostoevsky, Florence Nightingale, Shirley MacLaine, Jimmy Carter, and Edward Snowden.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the INFJ include writing, art appreciation, cultural events, reading,
+                socializing in small, intimate settings, and playing or listening to music.</p>
+        </div>
+        <div class="ISTP hide">
+            <h4>The Crafter</h4>
+            <p class="desc">ISTPs are observant artisans with an understanding of mechanics and an interest in
+                troubleshooting. They approach their environments with a flexible logic, looking for practical solutions
+                to the problems at hand.</p>
+            <hr>
+            <p class="desc">ISTPs are attentive to details and responsive to the demands of the world around them.
+                Because of their astute sense of their environment, they are good at moving quickly and responding to
+                emergencies. ISTPs are reserved, but not withdrawn: the ISTP enjoys taking action, and approaches the
+                world with a keen appreciation for the physical and sensory experiences it has to offer.</p>
+            <hr>
+            <p class="desc">Famous ISTPs include Lance Armstrong, Bruce Lee, Miles Davis, Tiger Woods, Chuck Yaeger,
+                Katherine Hepburn, Clint Eastwood, and Amelia Earhart.</p>
+            <hr>
+            <p class="desc">Popular hobbies for an ISTP include magic and comedy, archery, weaponry, hunting, scuba
+                diving, rappelling, aviation, skydiving, motorcycles, and other extreme sports. They are often drawn to
+                risky or thrilling activities and those that allow them to work with something mechanical.</p>
+        </div>
+        <div class="ISTJ hide">
+            <h4>The Inspector</h4>
+            <p class="desc">ISTJs are responsible organizers, driven to create and enforce order within systems and
+                institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything
+                they do.</p>
+            <hr>
+            <p class="desc">ISTJs are steady, productive contributors. Although they are Introverted, ISTJs are rarely
+                isolated; typical ISTJs know just where they belong in life, and want to understand how they can
+                participate in established organizations and systems. They concern themselves with maintaining the
+                social order and making sure that standards are met.</p>
+            <hr>
+            <p class="desc">Famous ISTJs include Queen Elizabeth II, Harry Truman, Warren Buffett, Queen Victoria,
+                George H.W. Bush, and J.D. Rockefeller.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the ISTJ include concentration games like chess and Trivial Pursuit,
+                playing computer games, watching sporting events, pursuing physical fitness, and playing solitary sports
+                such as golf.</p>
+        </div>
+        <div class="ISFP hide">
+            <h4>The Composer</h4>
+            <p class="desc">ISFPs are gentle caretakers who live in the present moment and enjoy their surroundings with
+                cheerful, low-key enthusiasm. They are flexible and spontaneous, and like to go with the flow to enjoy
+                what life has to offer.</p>
+            <hr>
+            <p class="desc">ISFPs have a strong aesthetic sense and seek out beauty in their surroundings. They are
+                attuned to sensory experience, and often have a natural talent for the arts. ISFPs especially excel at
+                manipulating objects, and may wield creative tools like paintbrushes and sculptor's knives with great
+                mastery.</p>
+            <hr>
+            <p class="desc">Famous ISFPs include Cher, Barbra Streisand, Jacqueline Kennedy Onassis, Bob Dylan, Wolfgang
+                Amadeus Mozart, Jimi Hendrix, and Michael Jackson.</p>
+            <hr>
+            <p class="desc">Popular hobbies for ISFPs are those that use their physical or artistic skills, including
+                independent athletics like skiing or swimming, dance, and craft projects. ISFPs also enjoy entertaining
+                in intimate groups and exploring art and nature.</p>
+        </div>
+        <div class="ISFJ hide">
+            <h4>The Protector</h4>
+            <p class="desc">ISFJs are industrious caretakers, loyal to traditions and organizations. They are practical,
+                compassionate, and caring, and are motivated to provide for others and protect them from the perils of
+                life.</p>
+            <hr>
+            <p class="desc">ISFJs are conventional and grounded, and enjoy contributing to established structures of
+                society. They are steady and committed workers with a deep sense of responsibility to others. They focus
+                on fulfilling their duties, particularly when they are taking care of the needs of other people. They
+                want others to know that they are reliable and can be trusted to do what is expected of them. They are
+                conscientious and methodical, and persist until the job is done.</p>
+            <hr>
+            <p class="desc">Famous ISFJs include Mother Teresa, George H.W. Bush, Laura Bush, King George VI, Kate
+                Middleton, Rosa Parks, Princess Mary of Denmark, and Clara Barton.</p>
+            <hr>
+            <p class="desc">Popular leisure activities for ISFJs include cooking, gardening, painting, crafts, picnics,
+                nature walks, and watching movies. They are also often found supporting their loved ones in their
+                interests and activities.</p>
+        </div>
+        <div class="ENTP hide">
+            <h4>The Visionary</h4>
+            <p class="desc">ENTPs are inspired innovators, motivated to find new solutions to intellectually challenging
+                problems. They are curious and clever, and seek to comprehend the people, systems, and principles that
+                surround them.</p>
+            <hr>
+            <p class="desc">ENTPs enjoy playing with ideas and especially like to banter with others. They use their
+                quick wit and command of language to keep the upper hand with other people, often cheerfully poking fun
+                at their habits and eccentricities. While the ENTP enjoys challenging others, in the end they are
+                usually happy to live and let live. They are rarely judgmental, but they may have little patience for
+                people who can't keep up.</p>
+            <hr>
+            <p class="desc">Famous ENTPs include Steve Jobs, Walt Disney, Thomas Edison, Benjamin Franklin, Richard
+                Feynman, Leonardo da Vinci, Niccolo Machiavelli, John Stuart Mill, Jon Stewart, “Weird Al” Yankovic, and
+                Conan O’Brien</p>
+            <hr>
+            <p class="desc">Popular hobbies for the ENTP include continuing education, writing, art appreciation,
+                playing sports, computers and video games, travel, and cultural events.</p>
+        </div>
+        <div class="ENTJ hide">
+            <h4>The Commander</h4>
+            <p class="desc">ENTJs are strategic leaders, motivated to organize change. They are quick to see
+                inefficiency and conceptualize new solutions, and enjoy developing long-range plans to accomplish their
+                vision. They excel at logical reasoning and are usually articulate and quick-witted.</p>
+            <hr>
+            <p class="desc">ENTJs are analytical and objective, and like bringing order to the world around them. When
+                there are flaws in a system, the ENTJ sees them, and enjoys the process of discovering and implementing
+                a better way. ENTJs are assertive and enjoy taking charge; they see their role as that of leader and
+                manager, organizing people and processes to achieve their goals.</p>
+            <hr>
+            <p class="desc">Famous ENTJs include Margaret Thatcher, Napoleon Bonaparte, Carl Sagan, General Norman
+                Schwarzkopf, David Letterman, Douglas MacArthur, Harrison Ford, and Quentin Tarantino.</p>
+            <hr>
+            <p class="desc">Popular hobbies for ENTJs include taking leadership positions in community groups, attending
+                social gatherings or sporting events, and playing competitive sports. Because ENTJs are so often focused
+                on their careers, they may have few interests outside of work, or they may participate in leisure
+                activities that also help to further their careers.</p>
+        </div>
+        <div class="ENFP hide">
+            <h4>The Champion</h4>
+            <p class="desc">ENFPs are people-centered creators with a focus on possibilities and a contagious enthusiasm
+                for new ideas, people and activities. Energetic, warm, and passionate, ENFPs love to help other people
+                explore their creative potential.</p>
+            <hr>
+            <p class="desc">ENFPs are typically agile and expressive communicators, using their wit, humor, and mastery
+                of language to create engaging stories. Imaginative and original, ENFPs often have a strong artistic
+                side. They are drawn to art because of its ability to express inventive ideas and create a deeper
+                understanding of human experience.</p>
+            <hr>
+            <p class="desc">Famous ENFPs include Bill Clinton, Phil Donahue, Mark Twain, Edith Wharton, Will Rogers,
+                Carol Burnett, Dr. Seuss, Robin Williams, Drew Barrymore, Julie Andrews, Alicia Silverstone, Joan Baez,
+                and Regis Philbin.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the ENFP include writing, creating and appreciating art, playing musical
+                instruments, listening to music, participating in community theater, and reading fiction.</p>
+        </div>
+        <div class="ENFJ hide">
+            <h4>The Teacher</h4>
+            <p class="desc">ENFJs are idealist organizers, driven to implement their vision of what is best for
+                humanity. They often act as catalysts for human growth because of their ability to see potential in
+                other people and their charisma in persuading others to their ideas.</p>
+            <hr>
+            <p class="desc">ENFJs are typically energetic and driven, and often have a lot on their plates. They are
+                tuned into the needs of others and acutely aware of human suffering; however, they also tend to be
+                optimistic and forward-thinking, intuitively seeing opportunity for improvement. The ENFJ is ambitious,
+                but their ambition is not self-serving: rather, they feel personally responsible for making the world a
+                better place.</p>
+            <hr>
+            <p class="desc">Famous ENFJs include Oprah Winfrey, Pope John Paul II, Margaret Mead, Ralph Nader, Abraham
+                Maslow, Dr. Phil McGraw, and Martin Luther King, Jr.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the ENFJ include organizing social events, reading, the arts, museums,
+                storytelling, listening to music, writing, and gourmet cooking.</p>
+        </div>
+        <div class="ESTP hide">
+            <h4>The Dynamo</h4>
+            <p class="desc">ESTPs are energetic thrillseekers who are at their best when putting out fires, whether
+                literal or metaphorical. They bring a sense of dynamic energy to their interactions with others and the
+                world around them.</p>
+            <hr>
+            <p class="desc">Active and playful, ESTPs are often the life of the party and have a good sense of humor.
+                They use their keen powers of observation to assess their audience and adapt quickly to keep
+                interactions exciting. Although they typically appear very social, they are rarely sensitive; the ESTP
+                prefers to keep things fast-paced and silly rather than emotional or serious.</p>
+            <hr>
+            <p class="desc">Famous ESTPs include Donald Trump, George W. Bush, Winston Churchill, Mae West, Eddie
+                Murphy, Bruce Willis, Madonna, and Evel Knievel.</p>
+            <hr>
+            <p class="desc">Popular hobbies for an ESTP include all sorts of sports and athletic pursuits, especially
+                team sports and risky or adventurous activities like race car driving, boxing, or flying.</p>
+        </div>
+        <div class="ESTJ hide">
+            <h4>The Supervisor</h4>
+            <p class="desc">ESTJs are hardworking traditionalists, eager to take charge in organizing projects and
+                people. Orderly, rule-abiding, and conscientious, ESTJs like to get things done, and tend to go about
+                projects in a systematic, methodical way.</p>
+            <hr>
+            <p class="desc">ESTJs are the consummate organizers, and want to bring structure to their surroundings. They
+                value predictability and prefer things to proceed in a logical order. When they see a lack of
+                organization, the ESTJ often takes the initiative to establish processes and guidelines, so that
+                everyone knows what's expected.</p>
+            <hr>
+            <p class="desc">Famous ESTJs include Colin Powell, Judge Judy Sheindlin, Dr. Laura Schlessinger, George
+                Washington, Sandra Day O’Connor, Mike Wallace, and Vince Lombardi.</p>
+            <hr>
+            <p class="desc">Popular hobbies for the ESTJ include building and repairing things around the home,
+                gardening, volunteering, community service, and playing and watching sports.</p>
+        </div>
+        <div class="ESFP hide">
+            <h4>The Performer</h4>
+            <p class="desc">ESFPs are vivacious entertainers who charm and engage those around them. They are
+                spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes,
+                nature, animals, and especially people.</p>
+            <hr>
+            <p class="desc">ESFPs are typically warm and talkative and have a contagious enthusiasm for life. They like
+                to be in the middle of the action and the center of attention. They have a playful, open sense of humor,
+                and like to draw out other people and help them have a good time.</p>
+            <hr>
+            <p class="desc">Famous ESFPs include Marilyn Monroe, Elizabeth Taylor, Judy Garland, Magic Johnson, Elvis
+                Presley, Ronald Reagan, Paul McCartney, Bob Hope, and Goldie Hawn.</p>
+            <hr>
+            <p class="desc">Popular hobbies for ESFPs include socializing, team sports, home improvement projects,
+                cooking, entertaining, games, and dance. ESFPs love big parties and gatherings and are quick to join any
+                group or activity that sounds like fun.</p>
+        </div>
+        <div class="ESFJ hide">
+            <h4>The Provider</h4>
+            <p class="desc">ESFJs are conscientious helpers, sensitive to the needs of others and energetically
+                dedicated to their responsibilities. They are highly attuned to their emotional environment and
+                attentive to both the feelings of others and the perception others have of them.</p>
+            <hr>
+            <p class="desc">ESFJs value loyalty and tradition, and usually make their family and friends their top
+                priority. They are generous with their time, effort, and emotions. They often take on the concerns of
+                others as if they were their own, and will attempt to put their significant organizational talents to
+                use to bring order to other people's lives.</p>
+            <hr>
+            <p class="desc">Famous ESFJs include Martha Stewart, Dave Thomas, Sam Walton, Barbara Walters, William
+                Howard Taft, JC Penney, Sally Field, Mary Tyler Moore, and Ray Kroc.</p>
+            <hr>
+            <p class="desc">Popular leisure activities for ESFJs include volunteering in community, charity, or
+                religious organizations; celebrating holidays and family traditions; cooking; entertaining; and social
+                sports.</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

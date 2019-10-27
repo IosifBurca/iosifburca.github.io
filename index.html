@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Iosif Burca</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link
+    href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+    rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header id="home">
+    <h1>Iosif Burca</h1>
+    <h3>
+      Self-taught Front End Developer/Designer
+    </h3>
+    <div id="home-buttons">
+        <a href="#contact">
+          <img src="images/mail-icon32x32.png" alt="mail-icon">
+        </a>
+        <a href="#navbar">
+          <img src="images/arrow-icon32x32.png" alt="arrow-icon">
+        </a>
+    </div>
+  </header>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#my-skills">skills</a></li>
+      <li><a href="#projects">my projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+  <div id="my-skills">
+    <div id="about-me">
+      <div id="photo">
+        <img src="images/me.jpg" alt="Iosif_Burca"/>
+      </div>
+      <div id="intro">
+        I am a self-taught front-end developer passionate about technology and learning. I am currently seeking
+        opportunities to start my career by obtaining a job in the web development field and i'm willing to relocate to
+        do
+        so.
+        I've spent the last year (2018) enhancing my skills in HTML5, CSS3, JavaScript, LESS and i am continuously
+        trying to expand my skillset. When i am not coding, i enjoy reading, playing video games and surfing Wikipedia
+        for
+        just about any history related topic.
+      </div>
+    </div>
+    <div id="skills">
+      <div class="skill skill-title">HTML</div>
+      <div class="skill skill-level">
+        <div id="html" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">75%</div>
+      <div class="skill skill-title">CSS</div>
+      <div class="skill skill-level">
+        <div id="css" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">80%</div>
+      <div class="skill skill-title">JavaScript</div>
+      <div class="skill skill-level">
+        <div id="javascript" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">55%</div>
+      <div class="skill skill-title">Less</div>
+      <div class="skill skill-level">
+        <div id="less" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">30%</div>
+      <div class="skill skill-title">React</div>
+      <div class="skill skill-level">
+        <div id="react" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">15%</div>
+      <div class="skill skill-title">Bootstrap</div>
+      <div class="skill skill-level">
+        <div id="bootstrap" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">40%</div>
+      <div class="skill skill-title">JQuery</div>
+      <div class="skill skill-level">
+        <div id="jquery" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">30%</div>
+      <div class="skill skill-title">Git</div>
+      <div class="skill skill-level">
+        <div id="git" class="completed"></div>
+      </div>
+      <div class="skill skill-percent">60%</div>
+    </div>
+  </div>
+  <div id="projects">
+    <div id="project-container">
+      <div class="project-item">
+        <div class="project-screenshot">
+          <a href="game/game.html" target="_blank">
+            <img src="images/game.png" alt="">
+          </a>
+        </div>
+        <div class="project-description">JavaScript Memory Game . Win by pairing two identical images.
+          <div class="technologies">
+            <img src="images/html5.png" alt="html5">
+            <img src="images/css3.png" alt="css3">
+            <img src="images/js.png" alt="js">
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-screenshot">
+          <a href="mbti/mbti.html" target="_blank">
+            <img src="images/mbti.png" alt="">
+          </a>
+        </div>
+        <div class="project-description">A Myers-Briggs personality quiz with 20 questions
+          <div class="technologies">
+            <img src="images/html5.png" alt="html5">
+            <img src="images/css3.png" alt="css3">
+            <img src="images/js.png" alt="js">
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-screenshot">
+          <a href="petersburg/Sankt Petersburg.html" target="_blank">
+            <img src="images/petersburg.png" alt="">
+          </a>
+        </div>
+        <div class="project-description">A simple presentation of Sankt Petersburg.
+          <div class="technologies">
+            <img src="images/html5.png" alt="html5">
+            <img src="images/css3.png" alt="css3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h1>CONTACT ME</h1>
+    <form action="https://formspree.io/xrnknadx" method="POST">
+      <input type="text" name="name" class="form-el" placeholder="Your Name" required />
+      <br>
+      <input type="email" name="email" class="form-el" placeholder="Your Email" required />
+      <br>
+      <textarea name="message" class="form-el" rows="4" placeholder="Your Message here..." required></textarea>
+      <br>
+      <input type="submit" class="form-el submit" value="SEND MESSAGE">
+    </form>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/iosif-burca-5950b2194/" target="_blank">
+        <img src="images/linkedin.png"  alt="linkedin">
+      </a>
+      <a href="" target="_blank">
+        <img src="images/github.png" alt="github">
+      </a>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
